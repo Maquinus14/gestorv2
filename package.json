@@ -1,0 +1,26 @@
+{
+  "title": "DWEC - Práctica Gestor de Presupuesto",
+  "name": "practica_dwec_gestor_presupuesto_api_gastos",
+  "version": "1.0.0",
+  "description": "Práctica de Gestión de Presupuestos del módulo de Desarrollo Web en Entorno Cliente + API Gestión de Gastos",
+  "main": "index.js",
+  "type": "module",
+  "author": "Pedro Prieto",
+  "license": "GPL-3.0",
+  "scripts": {
+    "test": "mocha",
+    "test1": "mocha test/01_testIntroJSI.js",
+    "test2": "mocha test/02_testIntroJSII.js",
+    "test3": "mocha test/03_testIntroJSIII.js",
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "chai": "^4.5.0",
+    "mocha": "^9.2.2"
+  }
+}

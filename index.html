@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="./css/estilos.css" rel="stylesheet" />
+    <title>Gestor de presupuesto</title>
+  </head>
+  <body>
+    <!-- Capas contenedoras para mostrar los datos de la aplicación -->
+    <div id="aplicacion">
+      <div id="total"></div>
+      <div id="formcreacion"></div>
+      <div id="listado"></div>
+      <!-- Botón para ir a indexv2.html -->
+      <button id="V2">Ir a versión V2</button>
+    </div>
+    <!-- Carga del script -->
+    <script type="module" src="./js/gestionPresupuestoWebV1.js"></script>
+
+    <script>
+      // Redirigir al hacer click
+      document.getElementById("V2").addEventListener("click", () => {
+        window.location.href = "indexv2.html";
+      });
+    </script>
+  </body>
+</html>

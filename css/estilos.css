@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+#aplicacion {
+  margin: 1em;
+}
+
+form {
+  margin: 1em 0;
+  box-shadow: 5px 5px 5px grey;
+  border: 1px solid grey;
+  padding: 0.5em;
+}
+
+.form-control {
+  margin: 0.5em 0;
+}
+
+.form-control label {
+  width: 100%;
+}
+
+.form-control input {
+  width: 100%;
+}
+
+button {
+  border: 1px solid #000000;
+  padding: 0.5em 0.7em;
+  margin: 0.1em 0.1em;
+  color: #ffffff;
+  background-color: red;
+  box-shadow: 2px 2px #e6e6e6;
+}
+
+button:hover {
+  background-color: rgb(185, 0, 0);
+  color: #c3c3c3;
+}
+
+button:active:enabled {
+  box-shadow: none;
+  transform: translateY(2px);
+}
+
+button[type="submit"] {
+  background-color: green;
+  color: white;
+}
+
+button[type="submit"]:hover {
+  background-color: rgb(38, 80, 38);
+  color: white;
+}
+
+button:disabled,
+button:disabled:hover {
+  cursor: not-allowed;
+  border-color: grey;
+  background-color: grey;
+  box-shadow: none;
+}
+
+/* Pantallas grandes */
+@media screen and (min-width: 600px) {
+  .form-control {
+    display: flex;
+  }
+
+  .form-control label {
+    flex: 0 0 8em;
+  }
+
+  .form-control input {
+    flex: 1;
+  }
+}
